@@ -1,1 +1,3 @@
-Read challenge description/Setup environment/create github repository - 40min
+Read challenge description/Setup environment/Create github repository - 40min
+Fix gradle version error/Run build/Test existing functionality - 1 hour
+Familiarize self with provided code - 20min
