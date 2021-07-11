@@ -7,6 +7,11 @@ public class ReportingStructure {
     public ReportingStructure() {
     }
 
+    public ReportingStructure(String employee, int numberOfReports) {
+        this.employee = employee;
+        this.numberOfReports = numberOfReports;
+    }
+
     public String getEmployee() {
         return employee;
     }
