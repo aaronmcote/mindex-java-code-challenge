@@ -6,7 +6,9 @@ import com.mindex.challenge.data.ReportingStructure;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ReportingService {
 
     private static final Logger LOG = LoggerFactory.getLogger(ReportingService.class);
@@ -17,7 +19,7 @@ public class ReportingService {
     // Takes an employee ID and creates and returns a ReportingStructure
     // object for that employee if they exist
     public ReportingStructure getReport(String id) {
-        LOG.debug("Getting reports for with id [{}]", id);
+        LOG.debug("Getting reports for employee with id [{}]", id);
 
         Employee employee = employeeRepository.findByEmployeeId(id);
 
@@ -28,7 +30,7 @@ public class ReportingService {
         //TODO compute number of reports for this employee
         int numberOfReports = 0;
 
-        ReportingStructure report = new ReportingStructure(id, numberOfReports);
+        ReportingStructure report = new ReportingStructure(employee, numberOfReports);
 
         return report;
     }

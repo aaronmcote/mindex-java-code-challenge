@@ -1,22 +1,24 @@
 package com.mindex.challenge.data;
 
+import com.mindex.challenge.data.Employee;
+
 public class ReportingStructure {
-    private String employee;
+    private Employee employee;
     private int numberOfReports;
 
     public ReportingStructure() {
     }
 
-    public ReportingStructure(String employee, int numberOfReports) {
+    public ReportingStructure(Employee employee, int numberOfReports) {
         this.employee = employee;
         this.numberOfReports = numberOfReports;
     }
 
-    public String getEmployee() {
+    public Employee getEmployee() {
         return employee;
     }
 
-    public void setEmployee(String employee) {
+    public void setEmployee(Employee employee) {
         this.employee = employee;
     }
 

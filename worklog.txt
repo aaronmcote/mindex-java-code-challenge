@@ -1,3 +1,6 @@
-Read challenge description/Setup environment/Create github repository - 40min
+Read challenge description/Setup environment/Create github repository - 40 min
 Fix gradle version error/Run build/Test existing functionality - 1 hour
-Familiarize self with provided code - 20min
+Familiarize self with provided code - 20 min
+Create data structure and service for task 1 - 40 min
+Read online tutorial for Spring Boot framework - 20 min
+Run, manual test, and debug task 1 code - 30  min
