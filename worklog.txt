@@ -5,4 +5,5 @@ Create data structure and service for task 1 - 40 min
 Read online tutorial for Spring Boot framework - 20 min
 Run, manual test, and debug task 1 code - 30  min
 Added functionallity to count reports for employees and manually tested - 70 min
-Total time: 280 min (4 hours and 40 minutes)
+-- finish task 1 --
+Create data structure for Compensation - 20 min
