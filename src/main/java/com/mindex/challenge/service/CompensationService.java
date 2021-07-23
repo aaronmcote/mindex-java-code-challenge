@@ -23,12 +23,12 @@ public class CompensationService {
         LOG.debug("Creating compensation [{}]", comp);
 
         // Find the associated employee from the repository
-        int employeeId = comp.getEmployee().getEmployeeId()
+        String employeeId = comp.getEmployee().getEmployeeId();
         Employee employee = employeeRepository.findByEmployeeId(employeeId);
 
         // Check this employee exists
         if (employee == null) {
-            throw new RuntimeException("Invalid employeeId: " + id);
+            throw new RuntimeException("Invalid employeeId: " + employeeId);
         }
 
         // Store this employee into the compensation data
