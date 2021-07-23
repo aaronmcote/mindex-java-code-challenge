@@ -122,7 +122,7 @@ The following functionality assumptions were made while developing this feature:
 * The "employee" data field in the ReportingStructure contains the entire employee object for the employee requested.
 
 ### Compensation Endpoints
-The following endpoint was added:
+The following endpoints were added:
 ```
 * CREATE
     * HTTP Method: POST 
@@ -134,10 +134,12 @@ The following endpoint was added:
     * URL: localhost:8080/employee/{id}/compensation
     * RESPONSE: Compensation
 ```
-The CREATE operation takes a Compensation value as part of the request body and adds that value to the compensation repository. ***Note: the employee field in the request body only needs to contain a structure with an employeeID. See sample below*** The READ operation retrieves an existing compensation for a given employee and returns that value in the response.
+The CREATE operation takes a Compensation value as part of the request body and adds that value to the compensation repository. *Note: the employee field in the request body only needs to contain a structure with an employeeID. See sample below.*
+
+The READ operation retrieves an existing compensation for a given employee and returns that value in the response.
 
 ### Compensation Sample
-The following is a sample request and response:
+The following are sample requests and responses:
 ```
 POST: localhost:8080/employee/compensation
 
@@ -174,3 +176,8 @@ The following functionality assumptions were made while developing this feature:
 * An employee can only have one Compensation associated with it since it is identified by the employee ID. 
 * A new Compensation will not be created for an employee when one already exists.
 * Attempting to get an employee's Compensation when it does not exist throws a runtime exception.
+
+## Final Note
+This project is part of a coding challege. For questions, contact aaronamc@gmail.com.
+
+Thank you for your time.
