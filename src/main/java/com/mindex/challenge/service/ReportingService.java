@@ -57,7 +57,7 @@ public class ReportingService {
             throw new RuntimeException("Invalid employeeId: " + id);
         }
 
-        //TODO compute number of reports for this employee
+        // Compute number of reports for this employee
         int numberOfReports = countReports(employee);
 
         ReportingStructure report = new ReportingStructure(employee, numberOfReports);
