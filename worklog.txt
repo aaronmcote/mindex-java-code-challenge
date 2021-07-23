@@ -8,4 +8,4 @@ Added functionallity to count reports for employees and manually tested - 70 min
 -- finish task 1 --
 Create data structure for Compensation - 20 min
 Create Compensation service and Compensation repository - 80 min
-Implement CompensationController and fix bugs in CompensationService - 20 min
+Implement CompensationController and fix bugs in CompensationService - 30 min
